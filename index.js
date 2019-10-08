@@ -1,4 +1,3 @@
-// Just working from another computer
 let modal = document.getElementById("modal");
 let btnCreate = document.getElementById("btnCreate");
 let inputSearch = document.getElementById("inputSearch");
