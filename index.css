@@ -1,0 +1,179 @@
+/* Just working from another computer */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    --main-color: rgb(166, 217, 240);
+    --page-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+#listOfItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.toDo {
+    margin: 15px;
+    padding: 20px;
+    background-color: var(--main-color);
+    border-radius: 15%;
+}
+
+.toDoFooter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.toDo button {
+    border-radius: 10%;
+}
+
+.toDo.done p {
+    text-decoration: line-through;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    width: 600px;
+    position: relative;
+    background-color: var(--main-color);
+}
+
+.modal-caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+}
+
+input,
+select {
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid black;
+    background: var(--page-color);
+}
+
+input:focus,
+select:focus {
+    border: 1px solid var(--main-color);
+    outline: 1px solid var(--main-color);
+}
+
+.modal-form {
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-footer {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+button {
+    padding: 7px;
+    margin: 5px;
+    font-weight: bold;
+    font-size: large;
+    color: var(--main-color);
+    background-color: var(--page-color);
+    border: 1px solid transparent;
+}
+
+button:hover,
+button:focus {
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+    outline: none;
+}
+
+#close {
+    cursor: pointer;
+}
+
+#btnCreate {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    padding: 15px;
+    background-color: var(--main-color);
+    color: var(--page-color);
+}
+
+.btns {
+    position: fixed;
+    right: 50px;
+    bottom: 150px;
+}
+
+/* #btnSortDon {
+    position: fixed;
+    right: 50px;
+    bottom: 150px;
+    padding: 15px;
+    background-color: var(--main-color);
+    color: var(--page-color);
+} */
+
+#inputSearch {
+    padding: 15px;
+    background-color: var(--main-color);
+    color: var(--page-color);
+}
+
+/* #btnSearch {
+    padding: 15px;
+    background-color: var(--main-color);
+    color: var(--page-color); 
+} */
+
+.toDoListBtn {
+    padding: 15px;
+    background-color: var(--main-color);
+    color: var(--page-color);
+}
+
+.low {
+    color: green;
+}
+
+.middle {
+    color: orange;
+}
+
+.high {
+    color: red;
+}
